@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.item {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+.one {
+    background-color: rgb(106, 176, 37);
+}
+
+.two {
+    background-color: chocolate;
+}
+
+.three {
+    background-color: rgb(54, 212, 212);
+    order: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.four {
+    order: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
